@@ -6,13 +6,17 @@ const NavContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    box-shadow: 0px 1px 25px grey;
+    box-shadow: 0px 2px 10px grey;
+`
+
+const Amavi = styled.h2`
+    font-family: 'Montserrat';
 `
 
 const NavBar = () => {
     return(
         <NavContainer>
-            <h2>Amavi</h2>
+            <Amavi>AMAVI</Amavi>
         </NavContainer>
     )
 }
