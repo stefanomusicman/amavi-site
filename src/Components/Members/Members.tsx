@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from "swiper";
+import { PrimaryContainer } from "../HeroSection/HeroSection";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { PrimaryContainer } from "../HeroSection/HeroSection";
+import "swiper/css/navigation";
 import MemberCard from "./MemberCard";
+import { Pagination} from "swiper";
 
 type member = {
     name: string,
-    image: string,
+    image: any,
     description: string
     id: number
 }
@@ -17,13 +18,13 @@ type member = {
 const members: member[] = [
     {
         name: 'Stefano',
-        image: '../../images/stefano.jpg',
+        image: <img src={require('../../images/stefano.jpg')} alt='stefano' style={{width: '60%', height: 'auto', borderRadius: '10px', boxShadow: '0px 2px 10px grey'}}/>,
         description: 'Stefano is born and raised in Montreal and began playing guitar at age 12. Having been playing in bands for over 10 years his love music continues to grow.',
         id: 1
     },
     {
         name: 'Massimo',
-        image: '../../images/massimo.jpg',
+        image: <img src={require('../../images/massimo.jpg')} alt='massimo' style={{width: '60%', height: 'auto', borderRadius: '10px', boxShadow: '0px 2px 10px grey'}}/>,
         description: 'Massimo is born and raised in Montreal and began playing guitar at age 12. Having been playing in bands for over 10 years his love music continues to grow.',
         id: 2
     }
@@ -45,7 +46,7 @@ const Carousel = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: auto;
+    height: 35em;
 `
 
 const Members = () => {
@@ -55,18 +56,18 @@ const Members = () => {
                 <Header>Members</Header>
             </HeaderContainer>
             <Carousel>
-                <Swiper 
+                <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
                     pagination={{
-                        clickable: true,
-                        }}
-                    navigation={true}
+                    clickable: true,
+                    }}
+                    navigation={false}
                     modules={[Pagination]}
-                    className='mySwiper'
-                    >
-                    {members.map((member) => <SwiperSlide> <MemberCard name={member.name} image={member.image} description={member.description} key={member.id}/> </SwiperSlide>)}
+                    className="mySwiper"
+                >
+                    {members.map((member) => <SwiperSlide> <MemberCard image={member.image} name={member.name} description={member.description}/> </SwiperSlide>)}
                 </Swiper>
             </Carousel>
         </PrimaryContainer>

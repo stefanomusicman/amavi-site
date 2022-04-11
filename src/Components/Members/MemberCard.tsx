@@ -6,8 +6,8 @@ const CardContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 85%;
-    box-shadow: 0px 2px 10px grey;
+    /* box-shadow: 0px 2px 10px grey; */
+    height: 40em;
 `
 
 const ImageContainer = styled.div`
@@ -32,7 +32,7 @@ const DescriptionContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
 `
 
 const Text = styled.p`
@@ -40,11 +40,12 @@ const Text = styled.p`
     font-family: 'Montserrat';
 `
 
-const MemberCard: React.FC<{ name: string, image: string, description: string }> = ({name, image, description}) => {
+const MemberCard: React.FC<{ name: string,  description: string, image: any }> = ({name,  description, image}) => {
     return(
         <CardContainer>
             <ImageContainer>
-                <Image src={image} alt='image'/>
+                {/* <Image src={image} alt='image'/> */}
+                {image}
             </ImageContainer>
             <Name>{name}</Name>
             <DescriptionContainer>
