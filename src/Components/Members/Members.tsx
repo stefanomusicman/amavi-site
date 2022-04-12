@@ -30,14 +30,14 @@ const members: member[] = [
     }
 ]
 
-const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 `
 
-const Header = styled.h2`
+export const Header = styled.h2`
     font-family: 'Montserrat';
 `
 
@@ -67,7 +67,7 @@ const Members = () => {
                     modules={[Pagination]}
                     className="mySwiper"
                 >
-                    {members.map((member) => <SwiperSlide> <MemberCard image={member.image} name={member.name} description={member.description}/> </SwiperSlide>)}
+                    {members.map((member) => <SwiperSlide key={member.id}> <MemberCard key={member.id} image={member.image} name={member.name} description={member.description}/> </SwiperSlide>)}
                 </Swiper>
             </Carousel>
         </PrimaryContainer>

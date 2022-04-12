@@ -10,7 +10,7 @@ export const PrimaryContainer = styled.div`
     padding-top: 15px;
 `
 
-const ContentContainer = styled.div`
+export const ContentContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +18,14 @@ const ContentContainer = styled.div`
     width: 80%;
 `
 
-const Image = styled.img`
+export const Image = styled.img`
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 2px 10px grey;
 `
 
-const Text = styled.p`
+export const Text = styled.p`
     font-family: 'Poppins';
     text-align: center;
 `
