@@ -9,14 +9,16 @@ const NavContainer = styled.div`
     box-shadow: 0px 2px 10px grey;
 `
 
-const Amavi = styled.h2`
-    font-family: 'Montserrat';
+const Amavi = styled.img`
+    width: 30%;
+    height: 30%;
+    padding: 10px;
 `
 
 const NavBar = () => {
     return(
         <NavContainer>
-            <Amavi>AMAVI</Amavi>
+            <Amavi src={require('../../images/amavi-logo.png')} alt="logo"/>
         </NavContainer>
     )
 }

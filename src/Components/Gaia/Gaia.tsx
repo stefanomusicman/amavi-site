@@ -29,6 +29,16 @@ const Gaia = () => {
             <ContentContainer>
                 <Text>{message}</Text>
             </ContentContainer>
+            <ContentContainer>
+                <iframe style={{borderRadius: "12px"}} 
+                    title='spotifyFrame' 
+                    src="https://open.spotify.com/embed/album/7C0cMJFcsdrsBOATua7dUo?utm_source=generator&theme=0" 
+                    width="100%" 
+                    height="250" 
+                    frameBorder="0"  
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
+            </ContentContainer>
         </PrimaryContainer>
     )
 }
