@@ -6,7 +6,6 @@ const CardContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0px 2px 10px grey; */
     height: 40em;
 `
 
@@ -15,11 +14,6 @@ const ImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-`
-
-const Image = styled.img`
-    width: 80%;
-    height: auto;
 `
 
 const Name = styled.h3`
@@ -44,7 +38,6 @@ const MemberCard: React.FC<{ name: string,  description: string, image: any }> =
     return(
         <CardContainer>
             <ImageContainer>
-                {/* <Image src={image} alt='image'/> */}
                 {image}
             </ImageContainer>
             <Name>{name}</Name>

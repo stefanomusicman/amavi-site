@@ -8,6 +8,13 @@ import "swiper/css/navigation";
 import MemberCard from "./MemberCard";
 import { Pagination} from "swiper";
 
+const Image = styled.img`
+    width: 60%;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0px 2px 10px grey;
+`
+
 type member = {
     name: string,
     image: any,
@@ -18,13 +25,13 @@ type member = {
 const members: member[] = [
     {
         name: 'Stefano',
-        image: <img src={require('../../images/stefano.jpg')} alt='stefano' style={{width: '60%', height: 'auto', borderRadius: '10px', boxShadow: '0px 2px 10px grey'}}/>,
+        image: <Image src={require('../../images/stefano.jpg')} alt='stefano' />,
         description: 'Stefano is born and raised in Montreal and began playing guitar at age 12. Having been playing in bands for over 10 years his love music continues to grow.',
         id: 1
     },
     {
         name: 'Massimo',
-        image: <img src={require('../../images/massimo.jpg')} alt='massimo' style={{width: '60%', height: 'auto', borderRadius: '10px', boxShadow: '0px 2px 10px grey'}}/>,
+        image: <Image src={require('../../images/massimo.jpg')} alt='massimo' />,
         description: 'Massimo is born and raised in Montreal and began playing guitar at age 12. Having been playing in bands for over 10 years his love music continues to grow.',
         id: 2
     }
