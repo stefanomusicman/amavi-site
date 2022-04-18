@@ -15,6 +15,12 @@ const PrimaryContainer = styled.div`
     margin-top: 5em;
 `
 
+const Iframe = styled.iframe`
+    border-radius: 12px;
+    width: 100%;
+    height: 250px;
+`
+
 const message: string = 'In 2019 AMAVI was given the opportunity to work alongside renowned dancer/choreographer John Huy Tran for the contemporary dance production GAIA WE ARE ONE. AMAVI wrote a 90 minute score which was performed live for audiences in Vietnam.'
 
 const Gaia = () => {
@@ -30,14 +36,12 @@ const Gaia = () => {
                 <Text>{message}</Text>
             </ContentContainer>
             <ContentContainer>
-                <iframe style={{borderRadius: "12px"}} 
+                <Iframe 
                     title='spotifyFrame' 
                     src="https://open.spotify.com/embed/album/7C0cMJFcsdrsBOATua7dUo?utm_source=generator"  
-                    width="100%" 
-                    height="250" 
                     frameBorder="0"  
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-                </iframe>
+                </Iframe>
             </ContentContainer>
         </PrimaryContainer>
     )
