@@ -23,6 +23,10 @@ export const Image = styled.img`
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 2px 10px grey;
+
+    @media (min-width: 1000px) {
+        width: 80%;
+    }
 `
 
 export const Text = styled.p`

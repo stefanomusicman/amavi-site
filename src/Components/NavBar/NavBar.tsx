@@ -13,6 +13,21 @@ const Amavi = styled.img`
     width: 30%;
     height: 30%;
     padding: 10px;
+
+    @media (min-width: 700px) {
+        width: 20%;
+        height: 20%;
+    }
+
+    @media (min-width: 1000px) {
+        width: 15%;
+        height: 15%;
+    }
+
+    @media (min-width: 1300px) {
+        width: 10%;
+        height: 10%;
+    }
 `
 
 const NavBar = () => {

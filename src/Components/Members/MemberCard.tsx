@@ -27,6 +27,10 @@ const DescriptionContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 90%;
+
+    @media (min-width: 700px) {
+        width: 60%;
+    }
 `
 
 const Text = styled.p`

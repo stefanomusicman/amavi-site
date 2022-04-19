@@ -13,6 +13,10 @@ const Image = styled.img`
     height: auto; 
     border-radius: 10px; 
     box-shadow: 0px 2px 10px grey;
+
+    @media (min-width: 700px) {
+        width: 30%;
+    }
 `
 
 type member = {
@@ -43,7 +47,6 @@ export const HeaderContainer = styled.div`
     align-items: center;
     width: 100%;
 `
-
 export const Header = styled.h2`
     font-family: 'Montserrat';
 `
@@ -54,7 +57,13 @@ const Carousel = styled.div`
     align-items: center;
     width: 100%;
     height: 35em;
+
+    @media (min-width: 700px) {
+        height: auto;
+    }
 `
+
+const isMobile: boolean = window.innerWidth <= 700;
 
 const Members = () => {
     return(
@@ -63,7 +72,7 @@ const Members = () => {
                 <Header>Members</Header>
             </HeaderContainer>
             <Carousel>
-                <Swiper
+                {isMobile && <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
@@ -75,7 +84,8 @@ const Members = () => {
                     className="mySwiper"
                 >
                     {members.map((member) => <SwiperSlide key={member.id}> <MemberCard key={member.id} image={member.image} name={member.name} description={member.description}/> </SwiperSlide>)}
-                </Swiper>
+                </Swiper>}
+                {!isMobile && members.map((member) => <MemberCard key={member.id} image={member.image} name={member.name} description={member.description}/>)}
             </Carousel>
         </PrimaryContainer>
     )

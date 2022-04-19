@@ -13,6 +13,10 @@ const LinksBox = styled.div`
     align-items: center;
     width: 80%;
     padding: 30px 0px;
+
+    @media (min-width: 1000px) {
+        padding: 40px 0px;
+    }
 `
 
 const ContentContainer = styled.div`
