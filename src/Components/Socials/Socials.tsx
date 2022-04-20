@@ -33,6 +33,10 @@ const Instagram = styled(BsInstagram)`
 
     &:hover {
         transform: scale(1.2);
+        background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        color: white;
+        border-radius: 10px;
+        background-color: white;
     }
 `
 
