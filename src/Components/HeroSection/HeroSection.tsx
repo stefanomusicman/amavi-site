@@ -38,7 +38,7 @@ const HeroSection = () => {
     return(
         <PrimaryContainer>
             <ContentContainer>
-                <Image src={require('../../images/Amavi-band.jpg')} alt='band'/>
+                <Image data-aos="fade-up" data-aos-duration="2000" src={require('../../images/Amavi-band.jpg')} alt='band'/>
             </ContentContainer>
             <ContentContainer>
                 <Text>Amavi is a four piece band from Montréal that can be described as alternative rock with extra flair.</Text>

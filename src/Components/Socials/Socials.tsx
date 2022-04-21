@@ -73,7 +73,7 @@ const Socials = () => {
             </ContentContainer>
             <LinksBox>
                 <a href="https://www.instagram.com/amaviband/" target='_blank' rel="noreferrer"><Instagram /></a>
-                <a href="https://www.facebook.com/amaviband/" target='_blank' rel="noreferrer"><Facebook /></a>
+                <a  href="https://www.facebook.com/amaviband/" target='_blank' rel="noreferrer"><Facebook /></a>
                 <a href="https://open.spotify.com/artist/7boItbSCPYjXvWUg25iD9y" target='_blank' rel="noreferrer"><Spotify /></a>
             </LinksBox>
         </PrimaryContainer>

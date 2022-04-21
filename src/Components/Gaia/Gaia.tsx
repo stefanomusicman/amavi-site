@@ -44,13 +44,14 @@ const Gaia = () => {
                 <Header>GAIA WE ARE ONE</Header>
             </HeaderContainer>
             <ContentContainer>
-                <Image src={require('../../images/tree-of-life.jpg')} alt='tree-of-life'/>
+                <Image data-aos="fade-down" src={require('../../images/tree-of-life.jpg')} alt='tree-of-life'/>
             </ContentContainer>
             <ContentContainer>
-                <Text>{message}</Text>
+                <Text data-aos="fade-up">{message}</Text>
             </ContentContainer>
             <ContentContainer>
                 <Iframe 
+                    data-aos="fade-up"
                     title='spotifyFrame' 
                     src="https://open.spotify.com/embed/album/7C0cMJFcsdrsBOATua7dUo?utm_source=generator"  
                     frameBorder="0"  
