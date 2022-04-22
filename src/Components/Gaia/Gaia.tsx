@@ -44,7 +44,7 @@ const Gaia = () => {
                 <Header>GAIA WE ARE ONE</Header>
             </HeaderContainer>
             <ContentContainer>
-                <Image data-aos="fade-down" src={require('../../images/tree-of-life.jpg')} alt='tree-of-life'/>
+                <Image data-aos="fade-up" src={require('../../images/tree-of-life.jpg')} alt='tree-of-life'/>
             </ContentContainer>
             <ContentContainer>
                 <Text data-aos="fade-up">{message}</Text>
