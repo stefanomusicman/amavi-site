@@ -21,7 +21,7 @@ const Image = styled.img`
     box-shadow: 0px 2px 10px grey;
 
     @media (min-width: 1000px) {
-        width: 60%;
+        width: 50%;
     }
 `
 
