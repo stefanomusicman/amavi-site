@@ -15,7 +15,7 @@ const LinksBox = styled.div`
     padding: 30px 0px;
 
     @media (min-width: 1000px) {
-        padding: 40px 0px;
+        padding: 50px 0px;
     }
 `
 
@@ -39,6 +39,11 @@ const Instagram = styled(BsInstagram)`
         background-color: white;
         overflow: hidden;
     }
+
+    @media (min-width: 1000px) {
+        width: 40px;
+        height: 40px;
+    }
 `
 
 const Facebook = styled(BsFacebook)`
@@ -50,6 +55,11 @@ const Facebook = styled(BsFacebook)`
         color: #4267B2;
         transform: scale(1.2);
     }
+
+    @media (min-width: 1000px) {
+        width: 40px;
+        height: 40px;
+    }    
 `
 
 const Spotify = styled(BsSpotify)`
@@ -60,6 +70,11 @@ const Spotify = styled(BsSpotify)`
     &:hover {
         color: #1DB954;
         transform: scale(1.2);
+    }
+
+    @media (min-width: 1000px) {
+        width: 40px;
+        height: 40px;
     }
 `
 
